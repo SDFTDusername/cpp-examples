@@ -41,10 +41,10 @@ int main() {
     if (rFile.is_open()) { // Check if the file is open before reading.
         vector<string> lines;
         string line;
-        while (getline(rFile, line)) {
-            lines.push_back(line);
+        while (getline(rFile, line)) { // Repeat reading each line until the end of the file.
+            lines.push_back(line); // Add the line to the vector
         }
-        for (string line : lines) {
+        for (string line : lines) { // Loop through each item in the vector
             cout << line << endl;
         }
     } else {

@@ -24,7 +24,7 @@ int main() {
     cin >> doubleInput;
     cout << "double: " << doubleInput << endl;
 
-    cout << "Input bool (0 or 1): ";
+    cout << "Input bool (1 or 0): ";
     cin >> boolInput; // This takes in 0 or 1.
     cout << "bool: " << boolInput << endl;
 

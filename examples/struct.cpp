@@ -3,9 +3,9 @@
 using namespace std;
 
 // If you need private variables and/or methods, use classes.
-// Structs use less memory than classes and are often used to represent simple data types/
+// Structs use less memory than classes and are often used to represent simple data types.
 
-// You create a named struct like this:
+// You create a named struct like this.
 struct Animal {
     string name;
     int age;

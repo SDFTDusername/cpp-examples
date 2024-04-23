@@ -25,26 +25,26 @@ int main() {
     if (rFile.is_open()) { // Check if the file is open before reading.
         string text;
         while (rFile) { // Repeat reading each character until the end of the file.
-            text += rFile.get(); // Get the character
+            text += rFile.get(); // Get the character.
         }
         cout << text << endl;
     } else {
         cout << "File isn't open" << endl;
     }
 
-    // Re-open file for next example
+    // Re-open file for next example.
     vector<string> lines;
     rFile = ifstream("filename.txt");
     cout << endl;
 
-    // Read every line of the file
+    // Read every line of the file.
     if (rFile.is_open()) { // Check if the file is open before reading.
         vector<string> lines;
         string line;
         while (getline(rFile, line)) { // Repeat reading each line until the end of the file.
-            lines.push_back(line); // Add the line to the vector
+            lines.push_back(line); // Add the line to the vector.
         }
-        for (string line : lines) { // Loop through each item in the vector
+        for (string line : lines) { // Loop through each item in the vector.
             cout << line << endl;
         }
     } else {

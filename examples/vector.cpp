@@ -20,7 +20,7 @@ int main() {
     letters.push_back("D"); // Adds D as the last item.
     letters.pop_back(); // Removes the last item.
     letters.insert(letters.begin() + 2, "A"); // Adds A at index 2.
-    // See more functions at https://cplusplus.com/reference/vector/vector/
+    // Read more at https://cplusplus.com/reference/vector/vector/
 
     cout << endl;
     for (int i = 0; i < letters.size(); i++) {

@@ -7,7 +7,7 @@ int main() {
     string original = "pizza";
     string &refr = original;
     cout << original << endl; // pizza
-    refr = "banana"; // Since refr is a reference to original, it directly edits original
+    refr = "banana"; // Since refr is a reference to original, it directly edits original.
     cout << original << endl; // banana
 
     // & can also get the memory address.

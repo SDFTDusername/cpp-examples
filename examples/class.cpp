@@ -9,7 +9,7 @@ class Animal {
         string name;
         int age;
 
-        Animal(bool isDog = false) { // Constructor
+        Animal(bool isDog = false) { // Constructor.
             _isDog = isDog;
         }
 
@@ -30,7 +30,7 @@ class Animal {
 // You can make classes inherit from other classes.
 class Bird: public Animal {
     public:
-        Bird(bool isBird = false) { // Constructors aren't inherited
+        Bird(bool isBird = false) { // Constructors aren't inherited.
             _isBird = isBird;
         }
 

@@ -6,7 +6,7 @@ using namespace std;
 typedef uint8_t byte; // This creates a datatype called byte which is exactly like uint8_t.
 
 int main() {
-    byte num = 0b10101010; // 170
+    byte num = 0b01000111; // 71
     cout << num << endl; // cout prints uint8_t as chars, so this will print the 71st unicode character.
 
     return 0;

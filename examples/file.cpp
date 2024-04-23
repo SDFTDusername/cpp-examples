@@ -1,5 +1,5 @@
-#include <iostream> # You have to include this to read and write files.
-#include <fstream> # You have to include this to read and write files.
+#include <iostream> // You have to include this to read and write files.
+#include <fstream> // You have to include this to read and write files.
 #include <vector>
 using namespace std;
 

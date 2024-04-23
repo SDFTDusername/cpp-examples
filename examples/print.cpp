@@ -8,7 +8,7 @@ int main() {
     // cout can print multiple data types such as int, float, bool, char, string, etc.
     cout << 5 << endl;
     cout << 5.2 << endl;
-    cout << true << endl;
+    cout << true << endl; // Prints 1 or 0
     cout << 'A' << endl;
 
     // You can also print the same or other data types at the same time.

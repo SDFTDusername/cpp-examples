@@ -1,5 +1,6 @@
 #include <iostream> # You have to include this to read and write files.
 #include <fstream> # You have to include this to read and write files.
+#include <vector>
 using namespace std;
 
 int main() {
@@ -20,13 +21,32 @@ int main() {
     // To read a file, create a new ifstream object.
     ifstream rFile("filename.txt");
 
-    // Use the get function to read a single character from the file.
-    string text;
+    // Read the entire file
     if (rFile.is_open()) { // Check if the file is open before reading.
+        string text;
         while (rFile) { // Repeat reading each character until the end of the file.
             text += rFile.get(); // Get the character
         }
         cout << text << endl;
+    } else {
+        cout << "File isn't open" << endl;
+    }
+
+    // Re-open file for next example
+    vector<string> lines;
+    rFile = ifstream("filename.txt");
+    cout << endl;
+
+    // Read every line of the file
+    if (rFile.is_open()) { // Check if the file is open before reading.
+        vector<string> lines;
+        string line;
+        while (getline(rFile, line)) {
+            lines.push_back(line);
+        }
+        for (string line : lines) {
+            cout << line << endl;
+        }
     } else {
         cout << "File isn't open" << endl;
     }

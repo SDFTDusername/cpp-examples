@@ -13,6 +13,9 @@ int main() {
 
     vector<string> letters({"A", "B", "C"});
 
+    // You can also create a vector with already filled items.
+    // vector<string> letters(5, "B"); // Creates a vector containing 5 strings which are both "A".
+
     // To get the size of a vector, you can use the size function.
     cout << letters.size() << endl; // 3
 
@@ -23,6 +26,9 @@ int main() {
     // Read more at https://cplusplus.com/reference/vector/vector/
 
     cout << endl;
+    cout << letters.size() << endl; // 4
+    cout << endl;
+
     for (int i = 0; i < letters.size(); i++) {
         cout << letters[i] << endl;
     }

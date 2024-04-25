@@ -3,14 +3,25 @@
 #include <vector>
 using namespace std;
 
+bool file_exists(string name) {
+    ifstream file(name);
+    bool exists = file.good();
+    file.close();
+    return exists;
+}
+
 int main() {
     // ofstream is for creating and writing files.
     // ifstream is for reading files.
     // fstream is a combination of ofstream and ifstream: creates, reads and writes files.
     // Instead of having two seperate objects for reading and writing, you can have a single fstream object.
 
+    // Check if a file exists.
+    cout << (file_exists("example.txt") ? "true" : "false") << endl;
+    cout << endl;
+
     // To create and write a file, create a new ofstream object.
-    ofstream wFile("filename.txt");
+    ofstream wFile("example.txt");
 
     // Writing to a file is like cout.
     wFile << "Hello World!\nHello\nWorld!";
@@ -19,7 +30,7 @@ int main() {
     wFile.close();
 
     // To read a file, create a new ifstream object.
-    ifstream rFile("filename.txt");
+    ifstream rFile("example.txt");
 
     // Read the entire file
     if (rFile.is_open()) { // Check if the file is open before reading.
@@ -34,7 +45,7 @@ int main() {
 
     // Re-open file for next example.
     vector<string> lines;
-    rFile = ifstream("filename.txt");
+    rFile = ifstream("example.txt");
     cout << endl;
 
     // Read every line of the file.
